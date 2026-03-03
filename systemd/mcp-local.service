@@ -1,0 +1,14 @@
+[Unit]
+Description=Local Python MCP Server (Ubo/Spark tools)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/mcp-local.env
+ExecStart=%h/.openclaw/workspace/mcp-server/.venv/bin/python %h/.openclaw/workspace/scripts/mcp_local_server.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
