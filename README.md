@@ -12,8 +12,11 @@ Python-based local MCP server for Jetson that exposes reusable tools for:
 ## Included files
 - `scripts/mcp_local_server.py`
 - `scripts/mcp_local_server.env.example`
+- `scripts/ubopod_quickcheck.sh`
+- `scripts/mcp_selfcheck.sh`
 - `systemd/mcp-local.service`
 - `docs/jetson-python-mcp-setup.md`
+- `docs/OPERATIONS.md`
 
 ## Quick start
 1. Create venv and install dependencies:
